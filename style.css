@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F0F4F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.white-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 450px;
+    background-color: white;
+}
+
+
+.left-side{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+
+
+h1{
+    padding-top: 20px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+
+
+h6{
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+
+.right-side{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+
+
+input{
+    margin: 16px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(144, 141, 141);
+}
+
+
+
+input::placeholder{
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+#btn{
+    display: flex;
+    justify-content: end;
+    padding: 10px 20px;
+}
+
+
+#btn>button{
+    padding: 10px 19px;
+    border-radius: 30px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #0B57D0;
+    color: white;
+    margin-top: 50px;
+}
+
+.links-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%; 
+    margin-top: 20px
+}
+
+.links-box ul {
+    display: flex;
+}
+
+.links-box ul>li{
+    list-style: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 600px){
+    .white-box{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-side,.right-side{
+        width: 100%;
+    padding: 0;
+    }
+    .container{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background-color: white;
+}
